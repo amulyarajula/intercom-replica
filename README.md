@@ -1,84 +1,46 @@
-# intercom-replica
-Intercom Admin Panel
-Overview
-The Intercom Admin Panel is a single-page React application designed as a customer support dashboard. It provides an intuitive interface for managing user conversations, viewing analytics, configuring settings, and monitoring user activity. The application features a responsive design with a dark theme, built using React, React Router, and Tailwind CSS for styling.
-Features
+# Getting Started with Create React App
 
-Dashboard: Displays key metrics (e.g., total conversations, active users, response time, satisfaction) and recent conversations with an AI suggestion panel.
-Conversations: Allows viewing and responding to user messages with a chat interface and conversation list.
-Users: Provides a searchable table of users with details like status, conversations, satisfaction, and tags.
-Analytics: Shows performance metrics and a weekly overview chart of messages and resolved issues, along with top-performing agents.
-Settings: Configures general settings, notifications, AI assistant preferences, and working hours.
-Responsive Sidebar: Collapsible sidebar for navigation with support for mobile responsiveness.
-Header: Includes a search bar and user profile indicator.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Technologies Used
+## Available Scripts
 
-React: Frontend library for building the user interface.
-React Router: Handles client-side routing for navigating between different sections.
-Tailwind CSS: Utility-first CSS framework for styling.
-Babel: Transpiles JSX for browser compatibility.
-CDN Dependencies: Uses CDN-hosted React, React Router, and Tailwind CSS for simplicity.
+In the project directory, you can run:
 
-Project Structure
-intercom-admin-panel/
-├── public/
-│   └── index.html         # Main HTML file with CDN dependencies
-├── src/
-│   ├── components/
-│   │   ├── Sidebar.jsx    # Sidebar navigation component
-│   │   ├── Header.jsx     # Header with search and user profile
-│   │   ├── Dashboard.jsx  # Dashboard with metrics and conversations
-│   │   ├── Conversations.jsx # Chat interface for user conversations
-│   │   ├── Users.jsx      # User management table
-│   │   ├── Analytics.jsx  # Analytics with charts and agent performance
-│   │   └── Settings.jsx   # Settings for configuration
-│   ├── App.jsx            # Main App component with routing
-│   └── App.css            # Global CSS styles
-├── README.md              # Project documentation
+### `npm start`
 
-Setup Instructions
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Clone the Repository:
-git clone https://github.com/your-username/intercom-admin-panel.git
-cd intercom-admin-panel
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
+### `npm test`
 
-Serve the Application:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The application uses CDN-hosted dependencies, so no build step is required.
-Use a local server to serve the public/index.html file. For example, with Python:python -m http.server 8000
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Open your browser and navigate to http://localhost:8000.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Development:
+### `npm run eject`
 
-To modify the application, edit the files in the src/ directory.
-Ensure you have a local development environment with a file watcher or use a tool like Vite or Create React App for a more robust setup.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Usage
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Navigation: Use the sidebar to switch between Dashboard, Conversations, Users, Analytics, and Settings. Click the arrow button to collapse/expand the sidebar.
-Conversations: Select a conversation from the list to view messages and send responses.
-Users: Search for users by name or email and view their details or initiate a message.
-Analytics: Monitor key metrics and visualize weekly message trends.
-Settings: Configure company details, notification preferences, AI response settings, and working hours.
+## Learn More
 
-Notes
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-The application is designed to run in any modern browser with JavaScript enabled.
-The Users component includes a searchable table with mock data for demonstration.
-The application avoids <form> elements due to sandbox restrictions, as per guidelines.
-CSS includes responsive design for mobile devices and custom scrollbar styling.
-
-Future Improvements
-
-Add backend integration for real-time data fetching.
-Implement state management (e.g., Redux) for complex state handling.
-Enhance the chart in the Analytics section with a library like Chart.js.
-Add authentication and role-based access control.
-
+To learn React, check out the [React documentation](https://reactjs.org/).
